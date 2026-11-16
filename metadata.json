@@ -1,0 +1,6 @@
+{
+  "name": "Andhra Student Hub (ASH)",
+  "description": "Statewide higher-education digital platform for Andhra Pradesh connecting students, colleges, fee transparency, scholarships, and grievance redressal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

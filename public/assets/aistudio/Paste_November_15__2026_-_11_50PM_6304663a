@@ -1,0 +1,1109 @@
+# MASTER IMPLEMENTATION PROMPT — ANDHRA STUDENT HUB (ASH)
+
+You are acting as a senior full-stack software architect, UI/UX designer, backend engineer, database architect, cybersecurity engineer, AI engineer and QA engineer.
+
+Your task is to upgrade my EXISTING Andhra Student Hub (ASH) application into a professional, secure, complete, statewide higher-education platform for Andhra Pradesh, India.
+
+**IMPORTANT: DO NOT CREATE A NEW PROJECT. DO NOT DISCARD MY EXISTING WORK.**
+
+First inspect the complete existing project, its source code, frontend, backend, database, API routes, authentication, assets, installed packages, existing features and configuration. Understand the existing architecture before changing anything.
+
+Preserve all working features and improve the existing application. Fix broken implementations, connect incomplete frontend and backend features, and implement missing modules. Do not replace working functionality with dummy screens.
+
+If the existing technology stack is suitable, retain it. Do not unnecessarily migrate the project to another framework.
+
+---
+
+# 1. OFFICIAL PRODUCT IDENTITY
+
+Product name: Andhra Student Hub  
+Short name: ASH  
+Platform: Andhra Pradesh Higher Education Digital Platform  
+Initial platform: Responsive web application  
+Primary region: Andhra Pradesh, India  
+Target users: Degree, B.Tech, engineering and other eligible higher-education students, colleges and education administrators.
+
+Official branding:
+
+ANDHRA PRADESH | HIGHER EDUCATION DIGITAL PLATFORM
+
+Main headline:
+
+Connecting Students. Empowering Colleges. Shaping the Future of Andhra Pradesh.
+
+Supporting headline:
+
+One Digital Platform for College Services, Fee Transparency, Scholarships and Student Grievance Redressal.
+
+Tagline:
+
+Your Gateway to a Connected Higher Education Ecosystem.
+
+Use a premium, professional, modern Indian education technology design. The application must look like a genuine, established statewide education platform, not a basic AI-generated website template.
+
+Proposed production domain: www.ashstudenthub.com
+
+Keep the domain configurable. Do not claim that the domain has been purchased, connected or deployed unless that has actually happened.
+
+---
+
+# 2. PROFESSIONAL FRONTEND AND VISUAL DESIGN
+
+Upgrade the existing frontend into a premium, responsive and professional website.
+
+Design requirements:
+
+- Modern, elegant and professional education technology interface.
+- Premium typography and consistent spacing.
+- Professional colour system using navy blue, royal blue, white and restrained accent colours.
+- Responsive layouts for desktop, laptop, tablet and mobile.
+- Smooth animations and subtle transitions.
+- Professional navigation and dropdown menus.
+- Attractive but lightweight cards and dashboards.
+- Accessible forms, clear error messages and loading states.
+- Professional empty states and success/error notifications.
+- Consistent design across every page.
+- No broken images, overflowing elements, blank screens or non-functional buttons.
+
+Main navigation:
+
+1. Home
+2. Colleges
+3. Student Services
+4. Scholarships
+5. Fee Information
+6. Grievances
+7. Competitive Exams
+8. NPTEL and Learning
+9. Career and Opportunities
+10. AI Student Assistant
+11. About ASH
+12. Login
+13. Register
+
+Homepage sections:
+
+- Professional hero section.
+- Verified Andhra Pradesh college directory preview.
+- Student services overview.
+- Scholarship opportunities.
+- Fee transparency features.
+- Grievance resolution process.
+- Competitive examinations and NPTEL updates.
+- College and university information.
+- Student support and AI assistant.
+- Official announcements.
+- Statistics only when supported by verified data.
+- Professional footer with contact, privacy, terms and help links.
+
+Do not display fake statistics such as verified college counts, registered students or resolved grievances.
+
+---
+
+# 3. AUTHENTIC COLLEGE PHOTOGRAPHS — NO AI-GENERATED COLLEGE IMAGES
+
+This is a critical requirement.
+
+The current frontend contains AI-generated images and generic college imagery. Replace these with authentic, real-world photographs.
+
+I want actual photographs of the specific colleges represented in the application.
+
+For each college, where available, display:
+
+- Actual college campus.
+- Main entrance and building.
+- Academic blocks.
+- Laboratories.
+- Library.
+- Classrooms.
+- Computer laboratories.
+- Sports and facilities.
+- Student activity areas.
+- Official college events.
+
+Photo sourcing rules:
+
+1. Prefer official college websites and officially published college media.
+2. Use photographs supplied by authorised college administrators.
+3. Use only photographs with appropriate usage permission or licensing.
+4. Store the original source, permission status and verification information.
+5. Never claim that a generic photograph belongs to a particular college.
+6. Never use AI-generated images as real college photographs.
+7. Never use random stock images as if they depict a named college.
+8. Never scrape or reuse copyrighted photographs without permission.
+9. Do not expose readable personal information from student ID cards or documents in photographs.
+
+If no authentic photograph is available, display a professional placeholder labelled:
+
+"Official college photograph coming soon."
+
+Create a college image management system:
+
+- College Admin can upload official photographs for their own college.
+- Uploads require source and permission information.
+- State Admin can review and approve photographs.
+- Approved photographs appear on the public college profile.
+- Rejected or unverified photographs must not appear as official images.
+- Store images in secure object storage, not directly inside database records.
+- Validate file type, file size and image content.
+- Support JPG, JPEG, PNG and WEBP.
+
+Use genuine photographs only. Do not fabricate the visual identity of any institution.
+
+---
+
+# 4. ANDHRA PRADESH COLLEGE DIRECTORY — TARGET 400+ COLLEGES
+
+Create a statewide directory capable of managing 400+ colleges and expanding further.
+
+Include relevant categories:
+
+- Government degree colleges.
+- Private degree colleges.
+- Aided degree colleges.
+- Government engineering colleges.
+- Private engineering colleges.
+- Autonomous colleges.
+- Universities.
+- Affiliated colleges.
+- Other eligible higher education institutions.
+
+Organise the directory district-wise across Andhra Pradesh.
+
+Include all relevant districts and maintain district names consistently using verified official administrative data.
+
+Each college record should support:
+
+- Official college name.
+- Official institution code.
+- College category.
+- Management type.
+- District.
+- Full postal address.
+- PIN code.
+- Official website.
+- Official email.
+- Official contact number.
+- Principal or authorised office contact, where officially published.
+- Affiliated university.
+- Autonomous status.
+- Accreditation information.
+- Approved courses.
+- Programmes and departments.
+- Admission information.
+- Academic information.
+- Facilities.
+- Authentic college photographs.
+- Verification status.
+- Data source.
+- Last verified date.
+
+Use official sources wherever available, including:
+
+- Andhra Pradesh State Council of Higher Education (APSCHE).
+- Official OAMDC college and institute directories.
+- Andhra Pradesh higher education department portals.
+- Official university directories.
+- Official college websites.
+- Other relevant government and recognised regulatory sources.
+
+Data rules:
+
+- Never fabricate 400 college records.
+- Never invent institution codes.
+- Never invent college addresses, affiliations, courses or accreditation.
+- Do not mark a college verified merely because its name exists online.
+- Deduplicate records using official institution codes and verified identity.
+- Track missing information and verification status.
+- Provide CSV/Excel import and export for authorised administrators.
+- Allow State Admin to approve, update, deactivate or merge duplicate records.
+- Display the actual verified directory count, not the target count.
+
+If a source cannot be accessed automatically, create a secure administrative import process and document the remaining data requirements.
+
+---
+
+# 5. SECURE STUDENT REGISTRATION AND COLLEGE-LINKED LOGIN
+
+Implement a secure student identity and authentication system.
+
+The central requirement is:
+
+A student must be connected to their own college and must not be able to access another college's private student information.
+
+Registration fields:
+
+- Full legal name.
+- Student photograph.
+- Personal mobile number.
+- Email address.
+- College selection.
+- Official college institution code.
+- Student ID / admission number / enrolment number.
+- Course.
+- Department.
+- Academic year.
+- Admission year.
+- Current semester.
+- Date of birth, only where required for verification.
+- Password or secure passwordless authentication.
+- Consent and privacy acknowledgement.
+
+Authentication flow:
+
+STEP 1: Student selects their college.
+
+STEP 2: Application identifies the college using its official institution code.
+
+STEP 3: Student enters their college-issued student ID or enrolment number.
+
+STEP 4: Student enters their registered mobile number.
+
+STEP 5: Send an OTP to the mobile number using a configured SMS provider.
+
+STEP 6: Verify the OTP securely on the backend.
+
+STEP 7: Check student-college association using an authorised college API, verified college records or an authorised manual review.
+
+STEP 8: Activate the student account only after the required verification checks pass.
+
+STEP 9: Link the account to exactly one verified college enrolment, unless an authorised transfer or multiple-enrolment workflow is implemented.
+
+STEP 10: Redirect the student to their private Student Portal.
+
+IMPORTANT SECURITY RULES:
+
+- Mobile OTP verification does not by itself prove college enrolment.
+- Student ID alone must not be treated as sufficient identity verification.
+- Never allow a user to select another college's identity or access its student records.
+- Never trust the college ID supplied by the frontend.
+- Validate the authenticated user's college association on the backend for every protected request.
+- Do not allow users to modify their verified college ID through ordinary profile editing.
+- Use a secure college transfer and re-verification process.
+- OTPs must expire.
+- Limit OTP attempts and resend frequency.
+- Store OTPs securely using appropriate hashing or short-lived verification mechanisms.
+- Prevent OTP brute force, replay and account enumeration.
+- Use secure session management, access-token expiry and refresh-token rotation where applicable.
+- Use secure password hashing such as Argon2id or bcrypt if passwords are implemented.
+- Add login rate limiting, account recovery and suspicious-login controls.
+- Do not log passwords, OTPs, authentication tokens or sensitive documents.
+- Never return private authentication secrets to the frontend.
+
+Support these account statuses:
+
+- Registration pending.
+- OTP pending.
+- College verification pending.
+- Verified.
+- Additional evidence required.
+- Rejected.
+- Suspended.
+- Deactivated.
+
+---
+
+# 6. PRIVATE STUDENT PORTAL
+
+After successful authentication, redirect each student to a professional personalised dashboard.
+
+The dashboard must show only the authenticated student's permitted information.
+
+Student profile section:
+
+- Student photograph.
+- Full name.
+- Student ID.
+- College name and institution code.
+- District.
+- Course and department.
+- Academic year.
+- Semester.
+- Admission year.
+- Registered mobile number.
+- Registered email.
+- Verification status.
+- Profile completion status.
+
+Dashboard sections:
+
+A. MY COLLEGE
+
+- College details.
+- Official address.
+- Contact information.
+- Website.
+- College facilities.
+- Course information.
+- College notices.
+- Academic calendar.
+- Official events.
+
+B. MY FINANCIAL INFORMATION
+
+- Applicable total fees.
+- Tuition fee.
+- Examination fee.
+- Hostel fee, if applicable.
+- Transport fee, if applicable.
+- Other authorised fee categories.
+- Amount already paid.
+- Pending amount.
+- Upcoming due dates.
+- Payment history.
+- Fee receipts.
+- Payment status.
+
+Display financial information only from authorised college records or actual verified payment transactions.
+
+Do not generate fictional fee balances, receipts or payment confirmations.
+
+C. MY SCHOLARSHIPS
+
+- Eligible scholarship opportunities.
+- Scholarship category.
+- Eligibility conditions.
+- Required documents.
+- Application opening date.
+- Deadline.
+- Official application link.
+- Application status, where authorised data is available.
+- Scholarship grievance tracking.
+
+Support relevant AP and central government scholarship programmes, but verify eligibility and deadlines from official sources.
+
+D. MY GRIEVANCES
+
+- Create grievance.
+- Upload evidence.
+- Select category.
+- Describe problem.
+- Track reference number.
+- View status.
+- View official response.
+- Add further evidence.
+- Request escalation.
+- View resolution details.
+
+E. MY ACADEMICS
+
+- Course information.
+- Semester information.
+- Examination notices.
+- Results links or authorised results integrations.
+- Academic calendar.
+- Official announcements.
+
+Do not invent examination results or academic records.
+
+F. MY CAREER
+
+- Internships.
+- Placement notices.
+- Competitive examinations.
+- Skill development.
+- NPTEL courses.
+- Learning resources.
+- Career guidance.
+- Verified opportunities.
+
+G. MY NOTIFICATIONS
+
+- Fee reminders.
+- Scholarship deadlines.
+- College announcements.
+- Grievance updates.
+- Examination notifications.
+- Account security notifications.
+
+H. ACCOUNT SETTINGS
+
+- Edit permitted profile information.
+- Update contact information using re-verification.
+- Change password.
+- Manage sessions.
+- Review privacy settings.
+- Request account support.
+
+The student must never be able to access another student's profile, financial information, documents, grievances or academic records.
+
+---
+
+# 7. COLLEGE DATABASE AND ERP INTEGRATION
+
+Different colleges may use separate databases and ERP systems.
+
+Build a flexible college integration architecture.
+
+Requirements:
+
+- Each college must have an isolated tenant or institution boundary.
+- Each college can have its own authorised data source.
+- Support secure REST API integration.
+- Support approved database synchronisation adapters.
+- Support CSV/Excel imports for authorised data.
+- Provide a manual verification fallback.
+- Use read-only integrations by default.
+- Support scheduled synchronisation where configured.
+- Record the source and last synchronisation time.
+- Log integration errors.
+- Prevent cross-college data leakage.
+
+Create integration configuration for:
+
+- Student enrolment verification.
+- Student profile synchronisation.
+- Fee information.
+- Payment records.
+- Scholarships.
+- College announcements.
+- Academic information.
+
+Do not connect to or access any college's private database without written authorisation and approved credentials.
+
+Never store third-party college database passwords in frontend code.
+
+Use secure connection strings, encrypted secrets, least-privilege service accounts and audit logs.
+
+If a college has no integration, use a verified manual administrative workflow instead of pretending the database is connected.
+
+---
+
+# 8. FEE MANAGEMENT AND PAYMENT SYSTEM
+
+Build a complete fee management module.
+
+Features:
+
+- College-specific fee structures.
+- Course-specific fees.
+- Academic-year-specific fees.
+- Semester-wise fees.
+- Fee categories.
+- Total payable amount.
+- Paid amount.
+- Pending amount.
+- Due dates.
+- Payment history.
+- Downloadable receipts.
+- Fee discrepancy reporting.
+
+College Admin must manage only their own college's fee data.
+
+Students must see only their own fee records.
+
+Payment integration:
+
+Create a payment gateway integration layer for an authorised provider such as Razorpay or another suitable Indian payment provider.
+
+Implement secure backend order creation, payment verification, webhook verification, transaction status and receipt generation.
+
+Never store card details, CVV or banking credentials.
+
+Never mark a payment as successful based only on a frontend response.
+
+If payment API credentials are unavailable, display a clearly labelled demo/test mode and do not claim that real payments are being processed.
+
+---
+
+# 9. SCHOLARSHIP MANAGEMENT
+
+Build a scholarship discovery and tracking system.
+
+Features:
+
+- Andhra Pradesh government scholarships.
+- Central government scholarships.
+- Private scholarships.
+- Merit-based scholarships.
+- Need-based scholarships.
+- Category-specific scholarships, where applicable.
+- Official eligibility requirements.
+- Required documents.
+- Opening dates and deadlines.
+- Official application links.
+- Student saved scholarships.
+- Application tracking where verified.
+- Scholarship grievance reporting.
+- Notifications before deadlines.
+
+Use official government sources and maintain source links and last-verified dates.
+
+Do not guarantee scholarship eligibility or approval.
+
+---
+
+# 10. AI-ASSISTED GRIEVANCE MANAGEMENT
+
+Create a professional grievance management system.
+
+Categories:
+
+- Fee-related issues.
+- Scholarship issues.
+- Examination issues.
+- Academic problems.
+- College administration.
+- Certificates and documents.
+- Hostel and transport.
+- Infrastructure.
+- Other student concerns.
+
+Student grievance form:
+
+- Automatically identify authenticated student and college.
+- Category.
+- Subject.
+- Description.
+- Contact details from verified profile.
+- Optional evidence uploads.
+- Consent to process submitted information.
+
+Features:
+
+- Unique grievance reference number.
+- Submission timestamp.
+- Assigned college authority.
+- Status timeline.
+- Official response.
+- Resolution evidence.
+- Student feedback.
+- Escalation to higher authority.
+- Notifications at every important status change.
+
+Statuses:
+
+- Submitted.
+- Received.
+- Under review.
+- Assigned.
+- Additional information requested.
+- In progress.
+- Escalated.
+- Resolved.
+- Closed.
+- Reopened.
+
+AI functions:
+
+- Classify grievance category.
+- Summarise the complaint.
+- Identify missing information.
+- Detect possible duplicates.
+- Suggest priority.
+- Recommend the appropriate authority.
+- Help draft official responses.
+
+AI must not independently reject a grievance, declare evidence fraudulent or make final legal or disciplinary decisions.
+
+A human authorised officer must make consequential decisions.
+
+Protect uploaded documents and images with private storage, access controls, validation and malware scanning where supported.
+
+---
+
+# 11. AI STUDENT ASSISTANT
+
+Implement an AI assistant that helps students understand:
+
+- College services.
+- Scholarship information.
+- Fee procedures.
+- Grievance procedures.
+- Competitive examinations.
+- NPTEL.
+- Career opportunities.
+- Academic notices.
+- Student portal navigation.
+
+Use verified platform information and official source links.
+
+AI must distinguish verified facts from general guidance.
+
+Do not invent scholarship deadlines, fee details, college rules or examination dates.
+
+Provide a safe fallback if the AI provider API key is missing.
+
+AI provider credentials must be configured only on the backend.
+
+Never expose the API key in JavaScript bundles, HTML, browser network responses, public configuration files or GitHub commits.
+
+---
+
+# 12. COLLEGE ADMIN DASHBOARD
+
+Create a separate authenticated College Admin dashboard.
+
+College Admin capabilities:
+
+- Manage only their assigned college.
+- View authorised student verification requests.
+- Approve or reject enrolment after evidence review.
+- Manage college information.
+- Upload official college photographs.
+- Manage college notices.
+- Manage courses and fee structures.
+- View authorised fee records.
+- Manage grievances assigned to their college.
+- Respond to grievances.
+- Escalate unresolved grievances.
+- Manage authorised scholarship information.
+- Import approved student records.
+- View college-level reports.
+- Manage permitted staff accounts.
+
+Enforce strict college-level access restrictions in backend queries and API permissions.
+
+A College Admin from College A must never access College B's private student information.
+
+---
+
+# 13. STATE ADMIN DASHBOARD
+
+Create a separate State Admin dashboard for statewide platform administration.
+
+Features:
+
+- Manage all college directory records.
+- Verify institutions.
+- Approve official college photographs.
+- Manage districts and college categories.
+- Import and export directory data.
+- Manage college administrators.
+- Manage platform users.
+- Review statewide grievance statistics.
+- Monitor escalation and resolution.
+- Manage platform announcements.
+- Manage scholarship information.
+- Monitor integration health.
+- View security audit logs.
+- Review data quality.
+- Manage platform configuration.
+
+State Admin permissions must be restricted to authorised administrators.
+
+Provide audit trails for sensitive actions.
+
+Do not expose confidential student records to staff who do not require access.
+
+---
+
+# 14. NOTIFICATIONS AND COMMUNICATION
+
+Build a notification system supporting:
+
+- In-app notifications.
+- Email notifications.
+- SMS notifications through an authorised provider.
+- Grievance status updates.
+- Scholarship deadline alerts.
+- Fee reminders.
+- College announcements.
+- Account security alerts.
+
+Provide notification preferences and consent controls.
+
+Use configurable providers and secure backend credentials.
+
+Do not pretend SMS or email has been delivered if the provider is not configured or the delivery result is unsuccessful.
+
+---
+
+# 15. SECURITY AND PRIVACY — CRITICAL
+
+Implement production-oriented security throughout the application.
+
+Security requirements:
+
+- HTTPS in production.
+- Secure authentication and authorisation.
+- Role-based access control.
+- College-level tenant isolation.
+- Server-side permission checks.
+- Secure password hashing.
+- OTP expiry and rate limiting.
+- Session management.
+- Refresh-token rotation where applicable.
+- CSRF protection where relevant.
+- CORS allowlist.
+- Input validation and sanitisation.
+- SQL injection protection.
+- XSS protection.
+- Secure file uploads.
+- Private document storage.
+- API rate limiting.
+- Secure error handling.
+- Audit logging.
+- Database backups.
+- Secret management.
+- Dependency vulnerability checks.
+- Account recovery.
+- Session revocation.
+- Protection against IDOR and privilege escalation.
+
+Create separate permissions for:
+
+- Public visitor.
+- Student.
+- College Admin.
+- State Admin.
+- Support staff, if needed.
+
+Do not rely on frontend route protection alone.
+
+Every protected backend endpoint must verify identity, role, college association and resource ownership.
+
+Never return another student's personal data.
+
+Never expose API keys, JWT secrets, database credentials, OTP secrets or private storage credentials.
+
+Follow applicable Indian data protection and privacy requirements, including the Digital Personal Data Protection Act and applicable rules. Include privacy notices, consent, data minimisation, retention controls and secure account/data deletion request workflows.
+
+---
+
+# 16. BACKEND, DATABASE AND API ARCHITECTURE
+
+Inspect the existing backend and improve it without breaking existing working functionality.
+
+Create or improve database models for:
+
+- Users.
+- Student profiles.
+- Colleges.
+- College administrators.
+- State administrators.
+- Courses.
+- Departments.
+- Enrolments.
+- OTP verification records.
+- College verification requests.
+- Fee structures.
+- Student fee accounts.
+- Payment transactions.
+- Scholarships.
+- Scholarship applications or tracking records.
+- Grievances.
+- Grievance evidence.
+- Grievance status history.
+- College announcements.
+- Notifications.
+- College integrations.
+- College photographs.
+- Audit logs.
+- AI interaction logs, excluding secrets and unnecessary personal data.
+
+Requirements:
+
+- Proper primary and foreign keys.
+- Database constraints.
+- Useful indexes.
+- Data validation.
+- Safe transactions.
+- Migration scripts.
+- Pagination and filtering.
+- Search.
+- Consistent API response format.
+- Proper HTTP status codes.
+- Centralised error handling.
+- API documentation.
+- Database backup and recovery instructions.
+
+Use the existing database technology if suitable.
+
+Never use hardcoded demo data as actual student records or verified college data.
+
+---
+
+# 17. API KEY AND ENVIRONMENT CONFIGURATION
+
+Create a secure environment configuration system.
+
+Identify every external integration the application actually needs.
+
+Examples may include:
+
+- AI provider API.
+- SMS OTP provider.
+- Email provider.
+- Database.
+- Object/file storage.
+- Payment gateway.
+- Authentication-related secrets.
+
+Create:
+
+- `.env.example` with variable names and safe placeholders only.
+- Backend environment configuration.
+- Validation for missing required variables.
+- Clear setup instructions.
+- Development and production configuration.
+- Secure secret-loading process.
+
+Example variable names:
+
+DATABASE_URL=
+JWT_SECRET=
+AI_PROVIDER_API_KEY=
+SMS_PROVIDER_API_KEY=
+SMS_PROVIDER_ID=
+EMAIL_PROVIDER_API_KEY=
+PAYMENT_PROVIDER_KEY_ID=
+PAYMENT_PROVIDER_KEY_SECRET=
+STORAGE_ACCESS_KEY=
+STORAGE_SECRET_KEY=
+APP_BASE_URL=
+
+These are placeholders, not actual credentials.
+
+Do not invent API keys.
+
+Do not put real credentials in source code.
+
+Do not commit `.env` files.
+
+Do not expose secrets through frontend environment variables.
+
+When an integration is not configured, show a clear configuration status and safe fallback.
+
+---
+
+# 18. DATABASE AND DATA INTEGRITY
+
+Create a reliable database structure with tenant isolation.
+
+Important requirements:
+
+- Every college-owned record must have a college association.
+- Every student-owned record must be linked to an authenticated student.
+- Enforce ownership checks at the backend.
+- Prevent cross-college data access.
+- Avoid duplicate student enrolments.
+- Avoid duplicate official college codes.
+- Maintain source and verification metadata.
+- Preserve audit history for sensitive changes.
+- Provide safe migration and rollback procedures.
+
+Do not delete existing user records or working database tables during upgrades.
+
+Back up the database before any destructive migration.
+
+---
+
+# 19. PERFORMANCE AND RELIABILITY
+
+Optimise the application for normal student usage on average devices and internet connections.
+
+Implement:
+
+- Lazy loading.
+- Image optimisation.
+- Pagination.
+- Database indexing.
+- API caching where safe.
+- Responsive image sizes.
+- Loading skeletons.
+- Error boundaries.
+- Graceful API failure handling.
+- Retry handling for temporary integration failures.
+- Efficient search and filters.
+
+Do not load hundreds of full-resolution photographs on the homepage.
+
+---
+
+# 20. TESTING AND QUALITY ASSURANCE
+
+Test the actual application, not just the appearance.
+
+Create and run:
+
+- Frontend build.
+- Backend startup checks.
+- API tests.
+- Authentication tests.
+- OTP workflow tests.
+- College verification tests.
+- Student profile tests.
+- Role permission tests.
+- College tenant-isolation tests.
+- Fee access tests.
+- Grievance workflow tests.
+- File upload security tests.
+- Payment verification tests.
+- Database migration tests.
+
+Important security acceptance tests:
+
+1. Student A from College A cannot access Student B's records.
+2. Student A cannot access College B's private records.
+3. College Admin A cannot manage College B.
+4. A student cannot change their verified college ID through a normal API request.
+5. An unauthenticated visitor cannot access student dashboard APIs.
+6. A fake frontend payment-success response cannot create a confirmed payment.
+7. An expired OTP cannot verify an account.
+8. A user cannot access another user's private uploaded document by changing its ID.
+9. A State Admin-only action cannot be performed by a student.
+10. Secrets must not appear in frontend bundles or API responses.
+
+Fix build errors, runtime errors, missing imports, broken routes and failing tests.
+
+Do not hide failing tests or report success without actually running them.
+
+---
+
+# 21. DEPLOYMENT AND DOMAIN READINESS
+
+Prepare the application for deployment using a configurable domain.
+
+Proposed domain:
+
+www.ashstudenthub.com
+
+Requirements:
+
+- Environment-based domain configuration.
+- Production HTTPS.
+- Secure cookies and session configuration.
+- Production database configuration.
+- Backend deployment instructions.
+- Frontend deployment instructions.
+- Storage configuration.
+- Domain and DNS setup instructions.
+- CORS configuration for the actual production domain.
+- Health-check endpoint.
+- Error monitoring configuration.
+- Database backup instructions.
+
+Do not claim the application is live merely because it runs in a development preview.
+
+Do not claim the domain is connected without successful DNS and HTTPS verification.
+
+Clearly distinguish local development, test mode, staging and production.
+
+---
+
+# 22. IMPLEMENTATION PROCESS — FOLLOW THIS ORDER
+
+PHASE 1: Existing project inspection.
+
+- Inspect every important project folder.
+- Identify the current framework and backend.
+- Identify existing modules and incomplete modules.
+- Identify broken code and missing dependencies.
+- Preserve working functionality.
+- Create a clear implementation checklist.
+
+PHASE 2: Frontend upgrade.
+
+- Upgrade the homepage.
+- Improve navigation and responsive layout.
+- Replace AI-generated college images with verified real photographs or professional placeholders.
+- Build the college directory and profile pages.
+- Build student registration and login pages.
+- Build student portal screens.
+- Build College Admin and State Admin dashboards.
+
+PHASE 3: Backend and database.
+
+- Improve authentication.
+- Implement secure college-linked identity verification.
+- Implement tenant isolation.
+- Implement required database models and migrations.
+- Connect frontend pages to real backend APIs.
+
+PHASE 4: Student services.
+
+- Implement fees.
+- Implement scholarships.
+- Implement grievances.
+- Implement notices and notifications.
+- Implement career, exams and NPTEL sections.
+- Implement AI assistant.
+
+PHASE 5: Integrations.
+
+- Add secure API integration layers.
+- Add configurable SMS, email, AI and payment providers.
+- Add college data import and synchronisation.
+- Document every integration requiring external approval or credentials.
+
+PHASE 6: Security and testing.
+
+- Run all available tests.
+- Test college-level isolation.
+- Test authentication and permissions.
+- Fix frontend and backend errors.
+- Verify that secrets are not exposed.
+
+PHASE 7: Deployment preparation.
+
+- Prepare production environment configuration.
+- Document database setup.
+- Document API key setup.
+- Document deployment.
+- Document custom domain connection.
+
+---
+
+# 23. FINAL DELIVERABLES
+
+At the end of implementation, provide:
+
+1. Updated existing source code.
+2. Professional responsive frontend.
+3. Functional backend.
+4. Database schema and migrations.
+5. Secure authentication and college verification.
+6. Student portal.
+7. College Admin dashboard.
+8. State Admin dashboard.
+9. College directory supporting 400+ verified institutions.
+10. Authentic college photograph management.
+11. Fee management.
+12. Scholarship management.
+13. Grievance management.
+14. AI student assistant.
+15. Notification system.
+16. API integration architecture.
+17. `.env.example`.
+18. API documentation.
+19. Test results.
+20. Installation and local development instructions.
+21. Deployment instructions.
+22. Domain connection instructions.
+23. List of features that are fully implemented.
+24. List of features that still require external API credentials, college permission, verified data or human administration.
+
+---
+
+# 24. NON-NEGOTIABLE RULES
+
+- Work on my existing Andhra Student Hub project.
+- Do not start a separate blank project.
+- Do not delete working features.
+- Do not replace the real backend with frontend-only demonstrations.
+- Do not use fake college data.
+- Do not use AI-generated photographs as real college photographs.
+- Do not invent student information.
+- Do not invent fee balances or payment receipts.
+- Do not fake SMS OTP delivery.
+- Do not fake payment success.
+- Do not expose API keys.
+- Do not allow cross-college student data access.
+- Do not give College Admin access to other colleges.
+- Do not claim integrations work without testing them.
+- Do not claim the application is production-ready unless the security, integration and deployment requirements have actually been completed.
+
+**IMPLEMENTATION EXPECTATION:**
+
+Do not respond with only a development plan or a list of suggestions.
+
+Inspect the existing project and implement the highest-priority changes directly in the current codebase. Make real source-code changes, connect the frontend to the backend, run available checks and fix errors.
+
+If the entire implementation cannot be completed in one generation, preserve all changes, clearly report what is completed and continue from the remaining implementation checklist without rebuilding the project.
+
+The final result should be a professional, secure, scalable Andhra Pradesh higher-education platform called:
+
+ANDHRA STUDENT HUB (ASH)
+
+A connected digital ecosystem for students, colleges and higher education administration across Andhra Pradesh.
